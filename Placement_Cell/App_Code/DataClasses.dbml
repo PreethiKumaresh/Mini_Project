@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbpreethi" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=KUMZ;Initial Catalog=dbpreethi;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="dbpreethiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.login" Member="logins">
+    <Type Name="login">
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentsJobApplied" Member="StudentsJobApplieds">
+    <Type Name="StudentsJobApplied">
+      <Column Name="sno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="studentid" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="companyid" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.detailCompany" Member="detailCompanies">
+    <Type Name="detailCompany">
+      <Column Name="companyid" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="emailid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="jpost" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="jpay" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="eligib" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cutoff" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="postavai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="app_final_date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentDetail" Member="StudentDetails">
+    <Type Name="StudentDetail">
+      <Column Name="studentid" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dob" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mailid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dept" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="degree" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ssc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="hsc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ug" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pg" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
