@@ -1,6 +1,6 @@
 # Mini_Project
 
-## Career Guidence and Placement Cell
+## Placement Cell
 It is a Student Placement Java Enterprise Application build using JSP also in ASP.NET using LINQ 
 
 Modules:
