@@ -1,4 +1,4 @@
 # Mini_Project
 
-## Student Management 
-It is a Placement Java Enterprise Application build using JSP 
+## Career Guidence Cell
+It is a Student Placement Java Enterprise Application build using JSP also in ASP.NET using LINQ 
